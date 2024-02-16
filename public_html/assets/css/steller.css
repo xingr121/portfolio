@@ -108,8 +108,11 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   font-size: 10px;
+  font-weight: bold;
   justify-content: center;
+  color: #000;
 }
+
 .technology {
   border: 1px solid silver;
   border-radius: 40px;
@@ -550,7 +553,11 @@ mark,
 .figure {
   display: inline-block;
 }
-
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 设置项目之间的距离 */
+}
 .figure-img {
   margin-bottom: 0.5rem;
   line-height: 1;
@@ -5362,7 +5369,7 @@ input[type="button"].btn-block {
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid #ff5c31;
   border-radius: 0.25rem;
 }
 
@@ -11873,8 +11880,8 @@ pre {
 }
 
 .header {
-  height: 94vh;
-  min-height: 650px;
+  height: 50vh;
+  min-height: 550px;
   border-bottom: 1px solid #dee2e6;
 }
 
@@ -12050,7 +12057,7 @@ pre {
 
 .section {
   position: relative;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 .section:nth-child(even) {
