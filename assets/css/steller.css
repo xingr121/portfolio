@@ -11,6 +11,7 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 :root {
   --blue: #79a9f5;
   --indigo: #c45f90;
@@ -123,6 +124,11 @@ h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+.name {
+  color: #ff7a57;
+  font-family: "Pacifico";
+  font-size: 50px;
 }
 
 abbr[title],
@@ -11960,7 +11966,7 @@ pre {
     justify-content: center;
   }
   .header .container .infos {
-    margin-top: 0;
+    margin-top: 50;
   }
   .header .container .img-holder {
     display: none;
