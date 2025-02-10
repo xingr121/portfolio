@@ -693,32 +693,13 @@
       }
     });
   
-// **1️⃣ 让矩形掉落**
+
 setInterval(() => {
     let box = Bodies.rectangle(Math.random() * window.innerWidth, 50, 50, 50);
     Composite.add(world, box);
 }, 3000);
 
-// **2️⃣ 使用 SVG 生成文字形状**
-async function createTextPhysics() {
-    const response = await fetch("try.svg");  // 需要一个 SVG 文字
-    const svgText = await response.text();
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(svgText, "image/svg+xml");
 
-    let paths = doc.querySelectorAll("path"); // 找到 SVG 里的路径
-    paths.forEach(path => {
-        let vertices = Svg.pathToVertices(path, 20); // 让路径变成物理形状
-        let textBody = Bodies.fromVertices(window.innerWidth / 2, window.innerHeight - 100, [vertices], {
-            isStatic: true,
-            render: { fillStyle: "black" }
-        });
-
-        Composite.add(world, textBody);
-    });
-}
-
-createTextPhysics();
     // Flag to check if the engine has started
     var engineStarted = false;
     
