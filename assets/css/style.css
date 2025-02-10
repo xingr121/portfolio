@@ -527,6 +527,7 @@ button::-moz-focus-inner,
   height: 50vh;
   min-height: 550px;
   border-bottom: 1px solid #dee2e6;
+  background-color: #d3d3d3;
 }
 
 .header .container {
